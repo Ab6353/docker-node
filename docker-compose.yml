@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  app:  # node application
+    build: .
+    environment:
+      - PORT=3000
+      - MONGO_CONTAINER_NAME=mongo
+    ports: 
+      - '80:3000' # host-port:container-port
+    links:
+         - mongo
+  mongo: # database
+    image: mongo:4.2
+    ports:
+      - '27017:27017'
+
+    
