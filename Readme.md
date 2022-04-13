@@ -134,6 +134,3 @@ To get the Node server running locally:
     ]
 }`
  
-
-## Authors
-* **Dhanush Kamath** - [dhanushkamath](https://github.com/dhanushkamath)
